@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "pixel";
+  src: url("fonts/pixel_digivolve-webfont.woff2") format("woff2"),
+    url("fonts/pixel_digivolve-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* set variables under root to reuse */
+:root {
+  --color-headings: #7fea59;
+  --color-body: #fff;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+  font-size: 2.08rem;
+  line-height: 1.5;
+  color: var(--color-body);
+  background: #000;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-family: "pixel", Arial, Helvetica, sans-serif;
+  font-size: 6rem;
+}
+
+h2 {
+  font-family: "pixel", Arial, Helvetica, sans-serif;
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+.gradient-headings {
+  background: linear-gradient(
+    270deg,
+    #8800ff 0%,
+    #7c00e8 0.01%,
+    #bc008f 52.48%,
+    #ff3400 100%
+  );
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+p {
+  margin-top: 0;
+}
