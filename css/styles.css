@@ -66,3 +66,30 @@ h3 {
 p {
   margin-top: 0;
 }
+
+/* links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+.btn {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn--opensea {
+  width: 43.5rem;
+  height: 18rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/opensea_button.gif);
+  transition: transform 0.2s ease-out;
+}
+
+.btn--opensea:hover {
+  transform: scale(1.05);
+}
