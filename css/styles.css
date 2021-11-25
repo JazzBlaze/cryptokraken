@@ -10,6 +10,7 @@
 :root {
   --color-headings: #7fea59;
   --color-body: #fff;
+  --color-border: #dc0d0d;
 }
 
 /* Typography */
@@ -92,4 +93,32 @@ a {
 
 .btn--opensea:hover {
   transform: scale(1.05);
+}
+
+/* dev-image-styling */
+.imageframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15.875rem;
+  width: 22rem;
+}
+
+.imageframe__borderframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
+  width: 12.5rem;
+  background-color: var(--color-border);
+  background-origin: border-box;
+  background-clip: border-box, content-box;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.3));
+}
+
+.imageframe__borderframe__img {
+  border-radius: 50%;
+  width: 11rem;
+  height: 11rem;
 }
