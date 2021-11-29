@@ -24,7 +24,7 @@ body {
   font-size: 2.08rem;
   line-height: 1.5;
   color: var(--color-body);
-  background: #fff;
+  background: black;
 }
 
 h1,
@@ -115,4 +115,22 @@ a {
   width: 157px;
   height: 153px;
   border-radius: 100%;
+}
+
+/* socials */
+.socials {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+}
+
+.socials__icon-small {
+  margin: 0 16px 0 16px;
+  transition: transform 0.2s ease-in;
+}
+
+.socials__icon-small:hover {
+  cursor: pointer;
+  transform: scale(1.15);
 }
