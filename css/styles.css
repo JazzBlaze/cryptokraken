@@ -116,3 +116,36 @@ a {
   height: 153px;
   border-radius: 100%;
 }
+
+/* dev-card */
+.dev-card{
+  width: 418px;
+  height: 510px;
+  box-sizing: border-box;
+  
+}
+
+.ellipse--card{
+  position: absolute;
+  left: 100px;
+  top: 51px;
+}
+
+.dev-info__dev-name {
+  position: absolute;
+  left: 73px;
+  top: 217px;
+  color: var(--color-body);
+
+}
+
+.dev-info__dev-bio {
+  position: absolute;
+  color: var(--color-body);
+  top: 308px;
+  left: 30px;
+  width: 330px;
+  height: fit-content;
+  text-align: center;
+  box-sizing: border-box;
+}
