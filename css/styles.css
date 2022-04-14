@@ -297,7 +297,14 @@ a {
   height: 44px;
 }
 /* All Rights */
+.footer__allrights > img{
+  height: 200px;
+
+}
+
 .footer__allrights {
+  display: flex;
+  flex-direction: column;
   margin: 22px 18px 22px 13px;
   align-content: center;
   justify-content: center;
@@ -305,4 +312,21 @@ a {
 
 .footer__allrights__text {
   text-align: center;
+  position: relative;
+  bottom: 30px;
 }
+
+/* GIF CARDS */
+
+.gifcard{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.gifcard > img{
+  display: block;
+  height: 376px;
+  width: 376px;
+}
+
