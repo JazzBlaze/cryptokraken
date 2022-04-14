@@ -286,3 +286,18 @@ a {
   position: relative;
   bottom: 30px;
 }
+
+/* GIF CARDS */
+
+.gifcard{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.gifcard > img{
+  display: block;
+  height: 376px;
+  width: 376px;
+}
+
