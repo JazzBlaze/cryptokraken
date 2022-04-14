@@ -201,7 +201,11 @@ a {
 .nav__logo {
   transform: translateX(11px) translateY(4px);
 }
-
+.nav__logo>img{
+  width: 168.46px;
+  height:80px;
+  padding: 0px 15px 0px;
+}
 /* dev-card */
 .dev-card {
   width: 418px;
