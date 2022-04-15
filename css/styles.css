@@ -184,6 +184,7 @@ a {
 .grid-special {
   grid-template-columns: 2fr 1fr;
 }
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -471,22 +472,17 @@ a {
 }
 
 /* project-section */
-.projsection{
-  display: flex;
-  flex-direction: column;
-}
+
 
 .projsection__projects{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .projsection__title{
   color: #7fea59;
   text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
-  margin-top: 54px;
+  margin-top: 0px;
   margin-left: 104px;
 }
 
