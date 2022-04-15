@@ -5,7 +5,27 @@
   font-weight: normal;
   font-style: normal;
 }
+body::-webkit-scrollbar {
+  width: 9px;
+}
 
+body::-webkit-scrollbar-track {
+  background-color: rgb(182, 187, 154);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    360deg,
+    #8800ff 0%,
+    #7c00e8 0.01%,
+    #bc008f 52.48%,
+    #ff3400 100%
+  );
+  border-radius: 50%;
+}
+html {
+  scroll-behavior: smooth;
+}
 /* set variables under root to reuse */
 :root {
   --color-headings: #7fea59;
