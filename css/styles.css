@@ -239,6 +239,7 @@ a {
   list-style: none;
   display: flex;
   max-height: 100%;
+  cursor: pointer;
 }
 
 .nav__list > li {
@@ -433,6 +434,10 @@ a {
 
 .gifcard__logo--poly{
   width: 330px;
+}
+
+.gifcard__logo--bob{
+  width: 320px;
 }
 
 .gifcard__button > img {
