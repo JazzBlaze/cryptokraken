@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/normalize.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+    <footer class="footer">
+      <div class="footer__emailbox">
+        <form action="" method="POST">
+          <label for="emailinfo" class="footer__emailbox__label"
+            >GET ON OUR LIST</label
+          >
+          <input
+            type="email"
+            class="footer__emailbox__input"
+            name="emailinfo"
+            placeholder="Email"
+          />
+        </form>
+
+        <button class="footer__emailbox__submit">Submit</button>
+      </div>
+
+      <ul class="socials socials--footer">
+        <li>
+          <img
+            class="socials__icon-small socials__icon-small--nohover"
+            id="soc1"
+            src="{{ url_for('static', filename='images/discord.svg') }}"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="socials__icon-small socials__icon-small--nohover"
+            id="soc2"
+            src="{{ url_for('static', filename='images/twitter.svg') }}"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="socials__icon-small socials__icon-small--nohover"
+            id="soc3"
+            src="{{ url_for('static', filename='images/telegram.svg') }}"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="socials__icon-small socials__icon-small--nohover"
+            id="soc4"
+            src="{{ url_for('static', filename='images/twitter.svg') }}"
+            alt=""
+          />
+        </li>
+      </ul>
+
+      <div class="footer__allrights">
+        <img
+          src="{{ url_for('static', filename='images/logo.png') }}"
+          alt="logohere"
+        />
+
+        <div class="footer__allrights__text">
+          © CRYTPOKRAKEN. <br />
+          2022, ALL RIGHTS <br />
+          RESERVED
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
