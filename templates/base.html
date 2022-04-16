@@ -20,6 +20,11 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/styles.css') }}"
     />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='images/favicon.ico') }}"
+      type="image/x-icon"
+    />
   </head>
   <body>
     {% block content %}{% endblock %}
@@ -42,36 +47,44 @@
 
       <ul class="socials socials--footer">
         <li>
-          <img
-            class="socials__icon-small socials__icon-small--nohover"
-            id="soc1"
-            src="{{ url_for('static', filename='images/discord.svg') }}"
-            alt=""
-          />
+          <a href="https://discord.gg/bAUFVbNe" target="/blank">
+            <img
+              class="socials__icon-small socials__icon-small--nohover"
+              id="soc1"
+              src="{{ url_for('static', filename='images/discord.svg') }}"
+              alt=""
+            />
+          </a>
         </li>
         <li>
-          <img
-            class="socials__icon-small socials__icon-small--nohover"
-            id="soc2"
-            src="{{ url_for('static', filename='images/twitter.svg') }}"
-            alt=""
-          />
+          <a href="https://twitter.com/CryptoKraken7" target="/blank">
+            <img
+              class="socials__icon-small socials__icon-small--nohover"
+              id="soc2"
+              src="{{ url_for('static', filename='images/twitter.svg') }}"
+              alt=""
+            />
+          </a>
         </li>
         <li>
-          <img
-            class="socials__icon-small socials__icon-small--nohover"
-            id="soc3"
-            src="{{ url_for('static', filename='images/telegram.svg') }}"
-            alt=""
-          />
+          <a href="https://t.me/+Hu2_1hgiuNI0NzQ1" target="/blank">
+            <img
+              class="socials__icon-small socials__icon-small--nohover"
+              id="soc3"
+              src="{{ url_for('static', filename='images/telegram.svg') }}"
+              alt=""
+            />
+          </a>
         </li>
         <li>
-          <img
-            class="socials__icon-small socials__icon-small--nohover"
-            id="soc4"
-            src="{{ url_for('static', filename='images/twitter.svg') }}"
-            alt=""
-          />
+          <a href="https://www.instagram.com/cryptokrakenznft/" target="/blank">
+            <img
+              class="socials__icon-small socials__icon-small--nohover"
+              id="soc4"
+              src="{{ url_for('static', filename='images/instagram.svg') }}"
+              alt=""
+            />
+          </a>
         </li>
       </ul>
 
