@@ -1,5 +1,11 @@
 # import the Flask class from the flask module
 from flask import Flask, render_template
+# from web3 import Web3
+# Python: web3.py
+# web3 = Web3(Web3.HTTPProvider(
+#     "https://eth-mainnet.alchemyapi.io/v2/hTHbdkUCcWGAlUz69jYh8ex5mYKahsl6"))
+# blocknumber = web3.eth.getBlockNumber()
+# print(blocknumber)
 
 # create the application object
 app = Flask(__name__)
