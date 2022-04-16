@@ -106,6 +106,48 @@ a {
   cursor: pointer;
 }
 
+.btn-text{
+  text-align: center;
+}
+.btn-breeding{
+  width: 89px;
+  height: 33px;
+  border-radius: 11px;
+  align-self: flex-end;
+  background-color: #636363;
+  color: #fff;
+  font-size: 19.2px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  align-self: center;
+  transition: transform 0.2s ease-out;
+}
+
+.btn-output{
+  width: 166px;
+  height: 61px;
+  border-radius: 11px;
+  align-self: flex-end;
+  background-color: #636363;
+  color: #fff;
+  font-size: 19.2px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  align-self: center;
+  transition: transform 0.2s ease-out;
+}
+
+.btn-breeding:hover{
+  transform: scale(1.05);
+}
+
+.btn-output:hover{
+  transform: scale(1.05);
+}
+
+
 .btn--opensea {
   width: 43.5rem;
   height: 18rem;
@@ -213,6 +255,16 @@ a {
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-row-gap: 10px;
+
+}
+
+.grid-breeding{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
 
 }
 
@@ -764,4 +816,19 @@ a {
 /* bobble mutants */
 .roadmap-bm .container-main{
   padding-bottom: 20px;
+}
+
+.breed{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.breed-text{
+  text-align: center;
+  font-weight: 700;
+}
+
+.breed-end{
+  padding-bottom: 50px;
 }
