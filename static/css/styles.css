@@ -157,6 +157,10 @@ a {
   transition: transform 0.2s ease-out;
 }
 
+.btn--opensea > h2{
+  font-size: 3.7rem;
+}
+
 .btn--opensea:hover {
   transform: scale(1.05);
 }

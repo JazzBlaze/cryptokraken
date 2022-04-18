@@ -9,16 +9,16 @@ endblock %} {% block content %}
   <ul class="nav__list">
     <li><a href="#about">ABOUT</a></li>
     <li><a href="#roadmap">ROADMAP</a></li>
-    <li>
+    <li id="#projects"> 
       PROJECTS
       <ul class="nav__submenu">
-        <li id="#projects">POLYMONKEYS</li>
-        <li id="#projects">MICROPUPPIES NFTs</li>
+        <li><a href="https://opensea.io/collection/polymonkeys" target="/blank">POLYMONKEYS</a></li>
+        <li><a href="https://opensea.io/collection/micropuppiesnft" target="/blank">MicroPuppiesNFT</a></li>
         <li><a href="/bobblemutants">BOBBLE MUTANTS</a></li>
       </ul>
     </li>
-    <li><a href="/nftspawn">NFT SPAWN</a></li>
-    <li><a href="/octarak">OCTARAK</a></li>
+    <li><a href="/nftspawn" target="/blank">NFT SPAWN</a></li>
+    <li><a href="/octarak" target="/blank">OCTARAK</a></li>
     <li><a href="#devteam">DEV-TEAM</a></li>
   </ul>
 </nav>
@@ -43,8 +43,8 @@ endblock %} {% block content %}
       <p class="hero__quote" data-aos="fade-right" data-aos-duration="600">
         Come join us & lets build the future!
       </p>
-      <a class="btn btn--opensea" href="#">
-        <h2>Buy on opensea</h2>
+      <a class="btn btn--opensea" href="#projects">
+        <h2>Explore Projects</h2>
       </a>
       <p class="gradient-headings socials__header">Connect with us</p>
       <ul class="socials">
@@ -166,7 +166,7 @@ endblock %} {% block content %}
         <div class="date">Done</div>
         <i class="icon fa fa-home"></i>
         <div class="content">
-          <h2>NFT COLLECTION LAUNCH</h2>
+          <h2>NFT COLLECTION LAUNCH-1</h2>
           <p>
             Launch of 'PolyMonkeys' NFT Collection
           </p>
@@ -176,14 +176,14 @@ endblock %} {% block content %}
         <div class="date">Done</div>
         <i class="icon fa fa-gift"></i>
         <div class="content">
-          <h2>NFT COLECTION LAUNCH</h2>
+          <h2>NFT COLECTION LAUNCH-2</h2>
           <p>
             Launch of 'MicroPuppiesNFT' NFT Collection
           </p>
         </div>
       </div>
       <div class="container left">
-        <div class="date"></div>
+        <div class="date">Ongoing</div>
         <i class="icon fa fa-user"></i>
         <div class="content">
           <h2>EXCLUSIVE NFT COLLECTION LAUNCH</h2>
@@ -193,6 +193,16 @@ endblock %} {% block content %}
         </div>
       </div>
       <div class="container right">
+        <div class="date">Ongoing</div>
+        <i class="icon fa fa-user"></i>
+        <div class="content">
+          <h2>LAUNCH OF 'THe Kraken Club'</h2>
+          <p>
+            A community where all the stakeholders of all CryptoKraken Projects can come together, collaborate, invest, trade, contribute and have exclusive access to all future CryptoKraken Projects
+          </p>
+        </div>
+      </div>
+      <div class="container left">
         <div class="date"></div>
         <i class="icon fa fa-running"></i>
         <div class="content">
@@ -202,13 +212,23 @@ endblock %} {% block content %}
           </p>
         </div>
       </div>
-      <div class="container left">
+      <div class="container right">
         <div class="date"></div>
         <i class="icon fa fa-cog"></i>
         <div class="content">
           <h2>RELEASE OF NFT WEB APP</h2>
           <p>
             NFT SPAWN - Web App for creating generative Art for NFT Collections
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="date"></div>
+        <i class="icon fa fa-cog"></i>
+        <div class="content">
+          <h2>RELEASE OF 'OCTARAK' COIN</h2>
+          <p>
+            An ERC-20 token that can be used within our Ecosystem, NFT Gaming and The Kraken Club
           </p>
         </div>
       </div>
@@ -249,7 +269,7 @@ endblock %} {% block content %}
           class="gifcard__logo"
         />
         <div class="gifcard__pagebutton"></div>
-        <a class="gifcard__button" href="">
+        <a class="gifcard__button" href="https://opensea.io/collection/micropuppiesnft" target="/blank">
           <img
             src="{{ url_for('static', filename='images/opensea_button.gif') }}"
             alt=""
@@ -289,7 +309,7 @@ endblock %} {% block content %}
           class="gifcard__logo gifcard__logo--poly"
         />
         <div class="gifcard__pagebutton"></div>
-        <a class="gifcard__button" href="">
+        <a class="gifcard__button" href="https://opensea.io/collection/polymonkeys" target="/blank">
           <img
             src="{{ url_for('static', filename='images/opensea_button.gif') }}"
             alt=""
@@ -314,7 +334,7 @@ endblock %} {% block content %}
           </div>
         </div>
         <h3 class="dev__name">
-          Gautham Krishna<a class="git" href="https://github.com/gauthking"
+          Gautham Krishna<a class="git" href="https://github.com/gauthking" target="/blank"
             ><img
               class="git__image"
               src="{{ url_for('static', filename='images/github.png') }}"
@@ -336,7 +356,7 @@ endblock %} {% block content %}
           </div>
         </div>
         <h3 class="dev__name">
-          Thejas Sanjeev<a class="git" href="https://github.com/JazzBlaze"
+          Thejas Sanjeev<a class="git" href="https://github.com/JazzBlaze" target="/blank"
             ><img
               class="git__image"
               src="{{ url_for('static', filename='images/github.png') }}"
