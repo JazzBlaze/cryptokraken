@@ -26,8 +26,8 @@ def nftspawn():
     return render_template('nftspawn.html')  # render a template
 
 
-@app.route('/kraken-club')
-def nftspawn():
+@app.route('/krakenclub')
+def krakenclub():
     return render_template('kraken-club.html')
 
 
