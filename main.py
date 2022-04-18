@@ -1,7 +1,5 @@
 # import the Flask class from the flask module
 from flask import Flask, redirect, render_template
-from web3 import Web3
-from flask import send_file
 import requests
 from flask import url_for
 # create the application object
