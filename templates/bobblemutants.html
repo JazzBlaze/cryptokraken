@@ -47,7 +47,7 @@
       <p class="hero__quote" data-aos="fade-right" data-aos-duration="600">
         Get your own Bobble Mutant today!!!!
       </p>
-      <a class="btn btn--opensea" href="#breed">
+      <a class="btn btn--opensea" href="#breed-sec">
         <h2>Breed Now!</h2>
       </a>
       <p class="gradient-headings socials__header">Connect with us</p>
@@ -136,7 +136,7 @@
     ></path>
   </svg>
 
-  <div id="breed" class="projsection__projects">
+  <div id="breed-sec" class="projsection__projects">
     <h2 id="load" class="projsection__title">BREEDING GROUND</h2>
     <div class="grid-breeding">
       <a id="metamaskbtn" class="btn btn--opensea grid-item" href="#load">
@@ -144,13 +144,17 @@
       </a>
       <div class="breed">
         <p>GET YOUR UNIQUE BOBBLEMUTANT NOW</p>
-        <button class="btn-breeding">Breed</button>
+        <a id="breed" href="{{ url_for('verify') }}" class="btn-breeding">
+          Breed
+        </a>
       </div>
     </div>
     <div class="breed breed-end">
-      <p class="breed-text">Breeding Results</p>
-      <p id="userWallet" class="breed-text">output</p>
-      <button class="btn-output">Download your Mutant</button>
+      <p id="userWallet" class="breed-text"></p>
+      <p id="breed-result" class="breed-text">{{output}}</p>
+      <a href="{{ url_for('download') }}" target="/blank" class="btn-output"
+        >Download your Mutant</a
+      >
     </div>
   </div>
 </section>

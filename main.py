@@ -1,12 +1,7 @@
 # import the Flask class from the flask module
-from flask import Flask, render_template
-# from web3 import Web3
-# Python: web3.py
-# web3 = Web3(Web3.HTTPProvider(
-#     "https://eth-mainnet.alchemyapi.io/v2/hTHbdkUCcWGAlUz69jYh8ex5mYKahsl6"))
-# blocknumber = web3.eth.getBlockNumber()
-# print(blocknumber)
-
+from flask import Flask, redirect, render_template
+import requests
+from flask import url_for
 # create the application object
 app = Flask(__name__)
 
@@ -27,6 +22,19 @@ def octarak():
 @app.route('/nftspawn')
 def nftspawn():
     return render_template('nftspawn.html')  # render a template
+
+
+@app.route('/verify', methods=["GET", "POST"])
+def verify():
+    url = "https://polygon-mainnet.g.alchemy.com/v2/hTHbdkUCcWGAlUz69jYh8ex5mYKahsl6/getNFTs/?owner=0x5651A9DB991A71b1adC7253f57E61db56CBcc34C&contractAddresses[]=0x2953399124F0cBB46d2CbACD8A89cF0599974963&contractAddresses[]=0x2953399124F0cBB46d2CbACD8A89cF0599974963"
+    output = "Generated Metadata:{backgrounds :yellow, head : darkblue, body  :  normal,  headgear: witch-hat, eyewear : thug, accessory : red-bowtie }"
+    verify = requests.get(url)
+    return output
+
+
+@app.route('/download', methods=["GET"])
+def download():
+    return redirect(url_for('static', filename='images/nft.png'))
 
 
 # start the server with the 'run()' method
