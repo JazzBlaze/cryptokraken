@@ -844,6 +844,13 @@ a {
   height: 100%;
 }
 
+.banner2 {
+  background-image: url(../images/banner2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 .octarak{
   height: 100%;
 }

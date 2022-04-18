@@ -15,13 +15,20 @@ def cryptokraken():
 def bobblemutants():
     return render_template('bobblemutants.html')  # render a template
 
+
 @app.route('/octarak')
 def octarak():
     return render_template('octarak.html')  # render a template
 
+
 @app.route('/nftspawn')
 def nftspawn():
     return render_template('nftspawn.html')  # render a template
+
+
+@app.route('/kraken-club')
+def nftspawn():
+    return render_template('kraken-club.html')
 
 
 @app.route('/verify', methods=["GET", "POST"])
