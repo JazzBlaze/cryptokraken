@@ -544,6 +544,7 @@ a {
 .hero__image > img {
   width: 500px;
   height: 500px;
+  border-radius: 70px;
 }
 
 /* overview */
@@ -565,6 +566,7 @@ a {
 .overview__image {
   width: 500px;
   height: 500px;
+  border-radius: 100%;
 }
 
 /* project-section */
