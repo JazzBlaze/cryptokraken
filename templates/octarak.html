@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="octarak">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Octarak Coin</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/normalize.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='images/favicon.ico') }}"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="octarak">
+    <div class="banner1" ></div>
+
+    <footer class="footer">
+      <div class="footer__emailbox">
+        <form action="" method="POST">
+          <div>GET ON OUR LIST</div>
+          <input
+            type="email"
+            class="footer__emailbox__input"
+            name="emailinfo"
+            placeholder="Email"
+          />
+        </form>
+
+        <button class="footer__emailbox__submit">Submit</button>
+      </div>
+
+      <ul class="socials socials--footer">
+        <li>
+          <a href="https://discord.gg/bAUFVbNe" target="/blank">
+            <img
+              class="socials__icon-small socials__icon-small--nohover"
+              id="soc1"
+              src="{{ url_for('static', filename='images/discord.svg') }}"
+              alt=""
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/CryptoKraken7" target="/blank">
+            <img
+              class="socials__icon-small socials__icon-small--nohover"
+              id="soc2"
+              src="{{ url_for('static', filename='images/twitter.svg') }}"
+              alt=""
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://t.me/+Hu2_1hgiuNI0NzQ1" target="/blank">
+            <img
+              class="socials__icon-small socials__icon-small--nohover"
+              id="soc3"
+              src="{{ url_for('static', filename='images/telegram.svg') }}"
+              alt=""
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/cryptokrakenznft/" target="/blank">
+            <img
+              class="socials__icon-small socials__icon-small--nohover"
+              id="soc4"
+              src="{{ url_for('static', filename='images/instagram.svg') }}"
+              alt=""
+            />
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer__allrights">
+        <img
+          src="{{ url_for('static', filename='images/logo.png') }}"
+          alt="logohere"
+        />
+
+        <div class="footer__allrights__text">
+          © CRYTPOKRAKEN. <br />
+          2022, ALL RIGHTS <br />
+          RESERVED
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
