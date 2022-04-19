@@ -115,14 +115,16 @@ endblock %} {% block content %}
   </svg>
   <div class="container-main grid grid-special">
     <header>
-      <h2 class="block__header">CRYPTO KRAKEN - AN OVERVIEW</h2>
-      <p>
+      <h2 class="block__header" data-aos="fade-right" data-aos-duration="1000">
+        CRYPTO KRAKEN - AN OVERVIEW
+      </h2>
+      <p data-aos="zoom-in" data-aos-duration="1800">
         CryptoKraken focuses on creating an ecosystem for NFT creators,
         collectors & enthusiasts in the NFT space, that provides services like
         minting, creating generative art for your NFT Collection and also
         special features and utilities for the owners of our NFT projects.
       </p>
-      <p>
+      <p data-aos="zoom-in" data-aos-duration="1800">
         We also focus on creating NFT Projects of our own, currently 2 projects
         are live on Opensea, PolyMonkeys & MicroPuppiesNFT. An exclusive feature
         is that - both our collections are INTER-BREEDABLE!! An individual who
@@ -130,14 +132,14 @@ endblock %} {% block content %}
         this feature. These newly bred NFTs form a new exclusive collection
         called BOBBLE MUTANTS.
       </p>
-      <p>
+      <p data-aos="zoom-in" data-aos-duration="1800">
         And all our NFTs are based on Polygon because why not 'Polygon' as it
         uses the same Ethereum you love and is gas free!! Feel free to follow
         our twitter and Medium for more info.
       </p>
     </header>
     <div class="overview__gif grid grid--1x3">
-      <div class="ellipse">
+      <div class="ellipse" data-aos="fade-left" data-aos-duration="900">
         <div class="ellipse__image">
           <img
             class="ellipse__gif"
@@ -146,7 +148,7 @@ endblock %} {% block content %}
           />
         </div>
       </div>
-      <div class="ellipse">
+      <div class="ellipse" data-aos="fade-left" data-aos-duration="1500">
         <div class="ellipse__image">
           <img
             class="ellipse__gif-pup"
@@ -155,11 +157,11 @@ endblock %} {% block content %}
           />
         </div>
       </div>
-      <div class="ellipse">
+      <div class="ellipse" data-aos="fade-left" data-aos-duration="2100">
         <div class="ellipse__image">
           <img
             class="ellipse__gif"
-            src="{{ url_for('static', filename='images/pup-borderless.gif') }}"
+            src="{{ url_for('static', filename='images/bobblemutantgif.gif') }}"
             alt="image of nft"
           />
         </div>
@@ -176,7 +178,7 @@ endblock %} {% block content %}
       <div class="container left">
         <div class="date">Done</div>
         <i class="icon fa fa-home"></i>
-        <div class="content">
+        <div class="content" data-aos="zoom-in-right" data-aos-duration="1800">
           <h2>NFT COLLECTION LAUNCH-1</h2>
           <p>Launch of 'PolyMonkeys' NFT Collection</p>
         </div>
@@ -184,7 +186,7 @@ endblock %} {% block content %}
       <div class="container right">
         <div class="date">Done</div>
         <i class="icon fa fa-gift"></i>
-        <div class="content">
+        <div class="content" data-aos="zoom-in-left" data-aos-duration="1800">
           <h2>NFT COLECTION LAUNCH-2</h2>
           <p>Launch of 'MicroPuppiesNFT' NFT Collection</p>
         </div>
@@ -192,7 +194,7 @@ endblock %} {% block content %}
       <div class="container left">
         <div class="date">Ongoing</div>
         <i class="icon fa fa-user"></i>
-        <div class="content">
+        <div class="content" data-aos="zoom-in-right" data-aos-duration="1800">
           <h2>EXCLUSIVE NFT COLLECTION LAUNCH</h2>
           <p>
             BobbleMutants Collection - Inter-Breedable NFTs are created using
@@ -203,7 +205,7 @@ endblock %} {% block content %}
       <div class="container right">
         <div class="date">Ongoing</div>
         <i class="icon fa fa-user"></i>
-        <div class="content">
+        <div class="content" data-aos="zoom-in-left" data-aos-duration="1800">
           <h2>LAUNCH OF 'THe Kraken Club'</h2>
           <p>
             A community where all the stakeholders of all CryptoKraken Projects
@@ -215,7 +217,7 @@ endblock %} {% block content %}
       <div class="container left">
         <div class="date"></div>
         <i class="icon fa fa-running"></i>
-        <div class="content">
+        <div class="content" data-aos="zoom-in-right" data-aos-duration="1800">
           <h2>NFT GAMING AND METAVERSE DROPS</h2>
           <p>
             Release of NFT Gaming features and Metaverse drops based on our NFT
@@ -226,7 +228,7 @@ endblock %} {% block content %}
       <div class="container right">
         <div class="date"></div>
         <i class="icon fa fa-cog"></i>
-        <div class="content">
+        <div class="content" data-aos="zoom-in-left" data-aos-duration="1800">
           <h2>RELEASE OF NFT WEB APP</h2>
           <p>
             NFT SPAWN - Web App for creating generative Art for NFT Collections
@@ -236,7 +238,7 @@ endblock %} {% block content %}
       <div class="container left">
         <div class="date"></div>
         <i class="icon fa fa-cog"></i>
-        <div class="content">
+        <div class="content" data-aos="zoom-in-right" data-aos-duration="1800">
           <h2>RELEASE OF 'OCTARAK' COIN</h2>
           <p>
             An ERC-20 token that can be used within our Ecosystem, NFT Gaming
@@ -247,7 +249,7 @@ endblock %} {% block content %}
       <div class="container right">
         <div class="date"></div>
         <i class="icon fa fa-certificate"></i>
-        <div class="content">
+        <div class="content" data-aos="zoom-in-left" data-aos-duration="1800">
           <h2>COMMING SOON..</h2>
           <p>
             Follow us on our socials to keep track of our upcoming projects and
@@ -272,7 +274,9 @@ endblock %} {% block content %}
     <div class="grid grid--nx3">
       <div class="gifcard">
         <img
-          src="{{ url_for('static', filename='images/pup-border.gif') }}"
+          data-aos="fade-up"
+          data-aos-duration="1600"
+          src="{{ url_for('static', filename='images/pup-borderless.gif') }}"
           alt="gif"
           class="gifcard__gif"
         />
@@ -296,7 +300,9 @@ endblock %} {% block content %}
       </div>
       <div class="gifcard">
         <img
-          src="{{ url_for('static', filename='images/pup-border.gif') }}"
+          data-aos="fade-up"
+          data-aos-duration="1600"
+          src="{{ url_for('static', filename='images/bobblemutantgif.gif') }}"
           alt="gif"
           class="gifcard__gif"
         />
@@ -316,7 +322,9 @@ endblock %} {% block content %}
       </div>
       <div class="gifcard">
         <img
-          src="{{ url_for('static', filename='images/poly-border.gif') }}"
+          data-aos="fade-up"
+          data-aos-duration="1600"
+          src="{{ url_for('static', filename='images/poly-borderless.gif') }}"
           alt="gif"
           class="gifcard__gif"
         />
@@ -345,7 +353,7 @@ endblock %} {% block content %}
   <div class="container-main">
     <h2 class="devteam__title">Dev Team</h2>
     <div class="devteam grid grid-dev">
-      <div class="dev-card">
+      <div class="dev-card" data-aos="fade-right" data-aos-duration="1600">
         <div class="ellipse ellipse--card">
           <div class="ellipse__image">
             <img
@@ -370,7 +378,7 @@ endblock %} {% block content %}
           and design. Blockchain enthus.
         </div>
       </div>
-      <div class="dev-card">
+      <div class="dev-card" data-aos="fade-left" data-aos-duration="1600">
         <div class="ellipse ellipse--card">
           <div class="ellipse__image">
             <img

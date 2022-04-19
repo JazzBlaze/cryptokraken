@@ -485,6 +485,7 @@ a {
   display: block;
   height: 376px;
   width: 376px;
+  border-radius: 80px;
 }
 
 .gifcard__logo {
