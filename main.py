@@ -28,7 +28,7 @@ def nftspawn():
 
 @app.route('/krakenclub')
 def krakenclub():
-    return render_template('kraken-club.html')
+    return render_template('krakenclub.html')
 
 
 @app.route('/verify', methods=["GET", "POST"])
